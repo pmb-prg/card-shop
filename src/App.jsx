@@ -1,10 +1,10 @@
 
 import { Navigate, Route, Routes } from 'react-router-dom'
-import './App.css'
-import Products from './pages/products'
-import DetailPage from './pages/DetailPage'
-import CheckoutPage from './pages/CheckoutPage'
-import NotFoundPage from './pages/NotFoundPage'
+import './App.css';
+import Products from './pages/Products';
+import DetailPage from './pages/DetailPage';
+import CheckoutPage from './pages/CheckoutPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 import Layout from './layout/Layout'
 function App() {
