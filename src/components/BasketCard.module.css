@@ -1,0 +1,58 @@
+.card{
+    height: 80px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding-right: 5px;
+    animation: showcard 1s forwards;
+}
+@keyframes showcard{
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+.cardImage{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+.cardImage img{
+    height: 60px;
+    width: 60px;
+}
+.buttonCard{
+    display: flex;
+    height: 30px;
+}
+.buttonCard p{
+    width: 50px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border: 1px dotted #fff;
+    border-radius: 3px;
+    margin: 0 3px;
+}
+.buttonCard button{
+    width: 31px;
+    height: 31px;
+    background-color: #737aff;
+    border: none;
+    border-radius: 3px;
+    font-size: large;
+    cursor: pointer;
+}

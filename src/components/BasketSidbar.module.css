@@ -1,0 +1,42 @@
+.sider{
+    background-color: #fff;
+    height: 246px;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+   margin-top: 30px; 
+    
+}
+.sider p{
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.sider p span{
+    color: #737aff;
+}
+.sider button{
+    width: 50%;
+    margin-bottom: 25px;
+    position: relative;
+    left: 25%;
+    background-color: #737aff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0 0 10px #00000082;
+    cursor: pointer;
+}
+@media (min-width:930px){
+    .sider{
+        width: 240px;
+        margin: 30px 5px;
+        box-sizing: content-box;
+    }
+}

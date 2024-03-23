@@ -1,0 +1,187 @@
+.products2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 77vh;
+    width: 100vw;
+}
+
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+}
+.categories div{
+    border: 2px solid #1F75FE;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.categories div ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: start;
+    padding: 0 20px;
+}
+.categories span{
+    display: none;
+}
+.categories li{
+    list-style: none;
+    font-weight: 600;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #1F75FE;
+}
+.selected{
+    color: #1f75fe;
+}
+
+.searchBox{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 8px;
+    left: 30%;
+    z-index: 1000;
+    border-radius: 5px;
+}
+.searchBox input{
+    width: 150px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    color: #000;
+    font-weight: 600;
+    transition: all 0.4s ease-in-out;
+
+}
+.searchBox input:focus{
+    box-shadow: 0 0 15px #535bf2;
+}
+.searchBox button{
+    width: 40px;
+    height: 27px;
+    background-color: #535bf2;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+@media (min-width:930px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 20px;
+        width: 90vw;
+    }
+    .products{
+        display: flex;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+        width: 80vw;
+        padding: 10px 0;
+    }
+    .products2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 77vh;
+        width: 80vw;
+
+    }
+    .categories{
+        width: 200px;
+        height: 500px;
+        position: sticky;
+        top: 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .categories div{
+        border-radius: 15px;
+        padding: 25px;
+        box-sizing: border-box;
+        border: 2px solid #1F75FE;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .categories span{
+        display: block;
+        font-weight: 600;
+        color: #646cff;
+        font-size: 1.2rem;
+        text-align: center;
+        background-color: #fff;
+        padding: 5px 3px;
+        border-radius: 5px;
+
+    }
+    .categories ul{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .categories li{
+        width: 100%;
+        font-weight: 600;
+        position: relative;
+        list-style: none;
+        margin: 4px 0;
+        padding: 0;
+        border: none;
+        /* transition: all 0.4S ease-in-out; */
+    }
+    .categories li:hover{
+        cursor: pointer;
+        color: #fff;
+    }
+    .categories li:hover::before{
+        width: 110%;
+        
+    }
+    .categories li::before{
+        content: "";
+        position: absolute;
+        background-color: #646cff;
+        width: 0;
+        height: 100%;
+        left: -5px;
+        transition: all 0.4S ease-in-out;
+        z-index: -1;
+        border-radius: 5px;
+    }
+    .selected{
+        color: #737aff;
+        border: 1px dashed #737aff;
+        padding-left: 5px;
+        border-radius: 3px;
+    }
+    .searchBox{
+        width: 350px;
+        left: 35%;
+        top: 15px;
+    }
+    .searchBox input{
+        width: 300px;
+    }
+}
